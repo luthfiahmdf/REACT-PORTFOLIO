@@ -7,7 +7,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="fixed top-0 w-screen flex flex-wrap items-center justify-between px-2 py-3 bg-[#232323] drop-shadow-lg">
+      <nav className="fixed top-0 w-screen flex flex-wrap items-center justify-between px-2 py-3 bg-[#232323] drop-shadow-lg z-10">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <img src={Logo} className="h-8" alt="" />
@@ -35,7 +35,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-5 py-2 flex items-center   font-bold leading-snug text-[#FFFFFF] hover:opacity-75"
-                  href="#pablo"
+                  href="#home"
                 >
                   <i className="fab fa-facebook-square text-[20px] leading-lg text-[#FFFFFF] opacity-75"></i>
                   <span
@@ -50,7 +50,7 @@ export default function Navbar({ fixed }) {
                 <a
                   style={{ fontFamily: "Inter", fontWeight: "600" }}
                   className="px-5 py-2 flex items-center   font-bold leading-snug text-[#FFFFFF] hover:opacity-75"
-                  href="#pablo"
+                  href="#about"
                 >
                   <i className="fab fa-twitter text-[20px] leading-lg text-[#FFFFFF] opacity-75"></i>
                   <span
@@ -64,7 +64,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-5 py-2 flex items-center   font-bold leading-snug text-[#FFFFFF] hover:opacity-75"
-                  href="#pablo"
+                  href="#portfolio"
                 >
                   <i className="fab fa-pinterest text-[20px] leading-lg text-[#FFFFFF] opacity-75"></i>
                   <span
@@ -78,14 +78,14 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-5 py-2 flex items-center   font-bold leading-snug text-[#FFFFFF] hover:opacity-75"
-                  href="#pablo"
+                  href="#testi"
                 >
                   <i className="fab fa-pinterest text-[20px] leading-lg text-[#FFFFFF] opacity-75"></i>
                   <span
                     style={{ fontFamily: "Inter", fontWeight: "600" }}
                     className="ml-2"
                   >
-                    Contact
+                    Testimonial
                   </span>
                 </a>
               </li>
